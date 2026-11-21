@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+float temp, threshold=30, normtemp=50, warntemp=70;
+    printf("Enter the sensor reading:");
+    scanf("%f",&temp);
+    if(temp<30)
+    {    printf("Motor is cool");
+    }
+    else if (temp>=30 && temp<50)
+    { printf("Motor is Normal");
+    }
+    else if(temp>=50 && temp<70)
+    {printf("Motor is WARNING");
+    }
+    else printf("Motor must be STOP");
+        
+    return 0;
+}
